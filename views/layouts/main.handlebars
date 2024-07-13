@@ -11,17 +11,15 @@
     <header>
     <h1>Chainsaw Tech Blog</h1>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        {{#if logged_in}}
+        
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Profile</a>
-    <button id="logout" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    Logout</button>
-        {{else}}
-        <a href="/login">Login</a>
-        {{/if}}
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        {{#if logged_in}}
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -29,9 +27,15 @@
           <a class="nav-link" href="#">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <button id="logout">Logout</button>
+        </li>
+          {{else}}
+        <li>
+        <a href="/login">Login</a>
+        {{/if}}
         </li>
       </ul>
+
     </div>
   </div>
 </nav>
@@ -40,7 +44,7 @@
         {{{body}}}
     </main>
     {{#if logged_in}}
-    <script src="/public/js/logout.js"></script>
+    <script src="./js/logout.js"></script>
     {{/if}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
