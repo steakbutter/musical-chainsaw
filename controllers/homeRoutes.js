@@ -19,6 +19,23 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
+router.get('/dashboard', withAuth, async (req, res) => {
+    try {
+        const userData = await User.findByPk(req.session.user_id, {
+            attributes: { exclude: ['password'] },
+        });
+        const user = userData.get({ plain: true });
+
+        res.render('dashboard', {
+            user,
+            logged_in: req.session.logged_in,
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+});
+
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
         res.redirect('/');
