@@ -1,0 +1,57 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff; /* White background for the body */
+    color: #333333; /* Dark gray text color for better readability */
+    font-family: Arial, sans-serif; /* Clean, sans-serif font for a minimalist look */
+  }
+  
+  header {
+    background-color: #FF0000; /* Red background for the header */
+  }
+  
+  .navbar {
+    background-color: #FF0000; /* Red background for the navbar */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #ffffff; /* White text color for navbar items */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .nav-link.active {
+    font-weight: bold; /* Highlight active link */
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
+  /* Container styling */
+  .container-fluid {
+    padding: 0 15px; /* Add padding to the sides */
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  #display-post {
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content area */
+    border: 1px solid #e0e0e0; /* Light gray border for subtle separation */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.25rem; /* Slightly larger font size for better readability on small screens */
+    }
+  }
