@@ -1,2 +1,9 @@
 <h2>Blog Posts</h2>
 
+{{#if user.posts.length}}
+    {{#each user.posts as |post|}}
+    
+        <h4>Title: {{post.title}} </h4>
+        <p> {{post.content}} </p>
+    {{/each}}
+    {{/if}}
