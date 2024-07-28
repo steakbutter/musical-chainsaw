@@ -11,7 +11,10 @@ To run the back end in this project, you will need to do an "npm install" to ins
 An "npm start" command inside the terminal will start up the server to test out the user and post routes. 
 
 ## Usage
-Go to https://musical-chainsaw.onrender.com/ and create a user using the sign up form. <br>
+Go to https://musical-chainsaw.onrender.com/ and create a user using the sign up form. <br> <br>
+![alt text](utils/imges/logsignup.png)<br><br>
 If you already have a user, go ahead and sign in using your email and password. <br>
-Once inside the "Chainsaw tech blog" you can navigate to the dashboard to create a new post. <br>
-Once you finish adding a title and content to your post, your post will be created and displayed in the home page of the website. 
+Once inside the "Chainsaw tech blog" you can navigate to the dashboard to create a new post. <br><br>
+![alt text](<utils/imges/Screenshot 2024-07-28 005101.png>) <br><br>
+Once you finish adding a title and content to your post, your post will be created and displayed in the home page of the website. <br><br>
+![alt text](<utils/imges/Screenshot 2024-07-28 005156.png>)
